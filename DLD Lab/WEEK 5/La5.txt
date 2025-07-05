@@ -1,0 +1,20 @@
+Lab5.
+vacuum tube predecessor of transisitor it has any falws
+first transistoe was allied fuse transistor
+p type semiconductorwas germinuim in the beginning 
+nowadays silicon planar transistorsa are used.
+silicon from sand is melted and a cylinder of pure silicon is made and its parts are sliced.
+0.1mm wafers(discs are cut from it) on them ics transistors are made.
+SSI: the number of transistors in a segment is determined by its density.and density is
+determined by ssi,msi,lsi,vlsi.
+simple wafer it doped with n type silicon.
+since it is too small it is constructed through picture lithography
+tranisistors are made by chemical reactions.
+Laser light is used for extraction of material to make a depth
+stensil is used to focus laser light and is the basic trick behind the formation of transisitors
+filling if the material is made by bombardment of atoms
+a resistor that is changed on the basis of an external factor is called thermistor
+they are o ftwo type ptc(positive temperature oefficients)
+ntc(negative temperature coefficients)
+
+
