@@ -1,0 +1,7 @@
+Q#1 Ip address of source is 10.5.116.146 and port number of source is 63625
+q#2 Ip address of gias.cs.umass.edu is 128.119.245.12 and its port number is 80
+TCP Behaviour:
+Q#4 Its sequence number is 0 Its flags identify that it is a SYN segment
+Q#5 SYNACK Packet has sequence number 0 value of ACK field is 1 it identifies this value relitively. It first begins by taking the
+value randomly moving ahead.
+Its flags determine that it is SYN ACK plus the header contains [SYN ACK] which helps in determining that it is a SYN ACK.

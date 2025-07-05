@@ -1,0 +1,14 @@
+Hub works on layer1 layer is a physical layer hub is not that intelligent it transfers data to all devices and look for
+acknowlgements it has cons of data privacy and low bandwidth.
+on datalink layer contains switch it sends data on particular destination. switch solves dataaprivacy as it uses mac address
+to send it to datalayer It delivers data in same network
+Network layer:For commmunicating data outside the network.Router communicates one network with other network it uses IP address
+IP is internet protocol it has five types class A, class B, class C, class D, class E it is represented in 4 objects as
+w.x.y.z all having 8 bits having total size as 32 bits which is IPv4 version of IP.first object i.e w defines we are in which class
+1-126 you are in class A
+128-191 Class B
+192-223 Class C
+224-255 Class D&E(used for broadcasting)
+for class A w=> nerwork Id, x,y,z=>Host Id having s^32-2 hosts
+for class B w,x => Network Id, y,z =>Host Id it has 2^16-2 hosts
+for class C w,x,y => Network Id, z=> Host Id it has 2^8-2(as 255 is used for broadcasting 

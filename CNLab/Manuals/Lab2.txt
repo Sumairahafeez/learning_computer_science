@@ -1,0 +1,6 @@
+data cannot be transferred from one vlan to another a switch connected with other systems has assigned an access port and if that
+port is connected with another switch it is called trunk port
+switch  => PC == access port
+switch => swicth == trunk port (it can carry data in muktiple vlans)
+if you want to create a vlan follow the following steps:
+Lab 7 Intervlan routing or Router on a stick

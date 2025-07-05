@@ -1,0 +1,14 @@
+access control list agar source ya destination py koi restriction lagi ho gi toh woh usay implement kry ga..
+standar ACL (1-99)
+extended ACL (100-199)
+searching will be  in ascending order and it stops at th epoint where it got the search if it dont find the item it will deny all
+other ip addresses ab usay permit bhi kia jaa skta hai..
+standard ACL main ham sirf source the ip address dy rhy hoty hain ky sirf usi ka ip address permit kro ya usay block kro.. yeh hamesha destinantion ky paas implement krty hain
+Extended ACL is more specific we give both source and destination address we also give protocol or source address. yeh soucrce ky pas implement ho ga.
+Wildcard mask written in 0s(exact match) or 1s(ignore)
+standard ACL=>
+	ACL# 10 permit/deny sourceIp address source Wildcardmask 
+	ACL# 11 ....
+	ACL# __ permit/deny protocol SIP SM DestinationIP Destination Mast Port# :: eq,H,gt,req
+	eg: 101 permit tcp 192.168.10.10 0.0.0.0 192.168.2.0 0.0.0.255 eg ftp(port#21)
+ 

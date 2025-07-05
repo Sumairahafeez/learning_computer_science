@@ -1,0 +1,21 @@
+Q#1 it is using http 1.1.
+Q#2 it is accepting en-USA
+Q#3 192.178.24.142 is the ip address of my computer
+Q#4 it is showing a status code 200 ok
+Q#5 Last modified date is  Thu, 14 Nov 2024 
+Q#6 868 bytes
+Q#7 no such header defined in data
+But there are some data that is not shown in the packet content window eg:
+Access-Control-Allow-Origin
+Date
+Pragma
+Expires
+Cache-Control
+Last-Modified
+X-Content-Type-Options
+Content-Type
+Cross-Origin-Resource-Policy
+Content-Security-Policy-Report-Only
+Report-To
+Content-Length
+File Data
