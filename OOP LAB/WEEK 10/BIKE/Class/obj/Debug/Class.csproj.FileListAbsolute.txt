@@ -1,0 +1,7 @@
+F:\2nd semester\OOP\Class\Class\bin\Debug\Class.exe.config
+F:\2nd semester\OOP\Class\Class\bin\Debug\Class.exe
+F:\2nd semester\OOP\Class\Class\bin\Debug\Class.pdb
+F:\2nd semester\OOP\Class\Class\obj\Debug\Class.csproj.AssemblyReference.cache
+F:\2nd semester\OOP\Class\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache
+F:\2nd semester\OOP\Class\Class\obj\Debug\Class.exe
+F:\2nd semester\OOP\Class\Class\obj\Debug\Class.pdb
