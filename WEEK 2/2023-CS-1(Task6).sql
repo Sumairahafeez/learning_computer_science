@@ -1,2 +1,0 @@
-SELECT GPA FROM [2023-CS-1]
-Where GPA <=3.5
