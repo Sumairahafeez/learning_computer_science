@@ -1,0 +1,47 @@
+This code shows an algorithm called LEFT-ROTATE(T, x) which is used in binary search trees (especially in self-balancing trees like Red-Black Trees) to perform a left rotation on a node x. A left rotation moves x down to the left and its right child, y, up to take x's place. 
+
+Here’s a breakdown of the algorithm in simple terms:
+
+### Purpose
+The goal of the LEFT-ROTATE operation is to rearrange the tree structure by moving a node (x) down and its right child (y) up, adjusting the links so that the tree remains a valid binary search tree. This rotation is used to help maintain balance in self-balancing trees.
+
+### Step-by-Step Explanation
+
+1. **Store y as the right child of x:**
+   - y = x.right
+   - We take the right child of x (let's call it y) because it will become the new root of the subtree after rotation.
+
+2. **Make y’s left child the right child of x:**
+   - x.right = y.left
+   - We update x's right child to be y's left child. This moves y's left subtree to be x's new right subtree.
+
+3. **If y's left child is not nil, update its parent pointer to x:**
+   - if y.left != T.nil
+   - If y's left child exists, we set its parent to x to maintain the correct parent-child relationships.
+
+4. **Update y’s parent to x's parent:**
+   - y.p = x.p
+   - We make y’s parent the same as x's parent, because y is moving up to take x's position.
+
+5. **Adjust x's parent to point to y:**
+   - There are three cases:
+     - *Case 1:* If x was the root (no parent), then y becomes the new root.
+       - if x.p == T.nil
+       - T.root = y
+     - *Case 2:* If x was a left child, make y the new left child.
+       - elseif x == x.p.left
+       - x.p.left = y
+     - *Case 3:* If x was a right child, make y the new right child.
+       - else x.p.right = y
+
+6. **Make x the left child of y:**
+   - y.left = x
+   - Since y has moved up, x now becomes the left child of y.
+
+7. **Update x's parent to be y:**
+   - x.p = y
+   - Now that x is the left child of y, we update x's parent to point to y.
+
+### Summary
+
+The LEFT-ROTATE operation essentially promotes x's right child (y) to take x's position in the tree, making x the left child of y. This rotation helps in maintaining balance in binary search trees and is a fundamental operation in trees like Red-Black Trees.
