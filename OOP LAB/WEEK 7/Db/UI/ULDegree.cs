@@ -1,0 +1,55 @@
+﻿using Db.BL;
+using Db.DL;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Db.UI
+{
+    internal class ULDegree
+    {
+        public static BLDegreeProgram AddDegree(SubjectCRUD Sub)
+        {
+            List<BLSubject> subjects = new List<BLSubject>();
+            Console.WriteLine("Enter The Degree Title: ");
+            string title = Console.ReadLine();
+            Console.WriteLine("Enter the duration: ");
+            int duration = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the seats for this program: ");
+            int seats = int.Parse(Console.ReadLine());
+            BLDegreeProgram d = new BLDegreeProgram (title, duration, seats);
+            DegreeProgramCRUD.StoreData(d);
+           int degreeId =DegreeProgramCRUD.GetDegreeId(title);
+          
+            subjects = GetSubjects(Sub,degreeId);
+            d.SubjectsTaught = subjects;
+            // DegreeProgramCRUD.WriteDataToFile(d);
+            return d;
+        }
+        public static List<BLSubject> GetSubjects(SubjectCRUD sub, int degreeID)
+        {
+            List<BLSubject> subjects = new List<BLSubject>();
+            Console.WriteLine("Enter the number of Subjects in your degree: ");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Enter Subject Code: ");
+                string code = Console.ReadLine();
+                Console.WriteLine("Enter Subject Credit Hours: ");
+                int CH = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Subject Type: ");
+                string type = Console.ReadLine();
+                Console.WriteLine("Enter Subject Fee: ");
+                float fee = int.Parse(Console.ReadLine());
+                BLSubject S = new BLSubject(code, CH, type, fee);
+                subjects.Add(S);
+                SubjectCRUD.AddSubjectsToList(S);
+                
+                SubjectCRUD.StoreDataInDegrees(S,degreeID);
+            }
+            return subjects;
+        }
+    }
+}

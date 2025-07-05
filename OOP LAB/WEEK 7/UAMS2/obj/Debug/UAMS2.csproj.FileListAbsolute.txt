@@ -1,0 +1,18 @@
+D:\2nd semester\OOP Lab\WEEK 5\UAMS2\bin\Debug\UAMS2.exe.config
+D:\2nd semester\OOP Lab\WEEK 5\UAMS2\bin\Debug\UAMS2.exe
+D:\2nd semester\OOP Lab\WEEK 5\UAMS2\bin\Debug\UAMS2.pdb
+D:\2nd semester\OOP Lab\WEEK 5\UAMS2\obj\Debug\UAMS2.csproj.AssemblyReference.cache
+D:\2nd semester\OOP Lab\WEEK 5\UAMS2\obj\Debug\UAMS2.csproj.CoreCompileInputs.cache
+D:\2nd semester\OOP Lab\WEEK 5\UAMS2\obj\Debug\UAMS2.exe
+D:\2nd semester\OOP Lab\WEEK 5\UAMS2\obj\Debug\UAMS2.pdb
+D:\2nd semester\PD\WEEK 5\UAMS2\obj\Debug\UAMS2.csproj.AssemblyReference.cache
+D:\2nd semester\PD\WEEK 5\UAMS2\obj\Debug\UAMS2.csproj.CoreCompileInputs.cache
+D:\2nd semester\PD\WEEK 5\UAMS2\obj\Debug\UAMS2.exe
+D:\2nd semester\PD\WEEK 5\UAMS2\obj\Debug\UAMS2.pdb
+D:\2nd semester\PD\WEEK 5\UAMS2\bin\Debug\UAMS2.exe.config
+D:\2nd semester\PD\WEEK 5\UAMS2\bin\Debug\UAMS2.exe
+D:\2nd semester\PD\WEEK 5\UAMS2\bin\Debug\UAMS2.pdb
+F:\2nd semester\OOP Lab\WEEK 7\UAMS2\obj\Debug\UAMS2.csproj.AssemblyReference.cache
+F:\2nd semester\OOP Lab\WEEK 7\UAMS2\obj\Debug\UAMS2.csproj.CoreCompileInputs.cache
+F:\2nd semester\OOP Lab\WEEK 7\UAMS2\obj\Debug\UAMS2.exe
+F:\2nd semester\OOP Lab\WEEK 7\UAMS2\obj\Debug\UAMS2.pdb

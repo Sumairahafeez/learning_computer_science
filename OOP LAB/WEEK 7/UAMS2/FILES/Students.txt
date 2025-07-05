@@ -1,0 +1,3 @@
+simran,23,240,230,0,,MEUAMS2.BLDegreeProgram
+s,1,2,3,0,,MEUAMS2.BLDegreeProgram
+s,2,12,12,0,,deUAMS2.BLDegreeProgram
