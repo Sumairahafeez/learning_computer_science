@@ -1,0 +1,12 @@
+Buffer can have only one input and only one outpiut and gives the same output as input. It shape is like not gate without the nod infront of it.
+if the output is opposite of the input it is called inverter. A gate is a logical circuit that takes input
+and covert it into output.A= A'.
+we have total 7 basic gates.
+A gate having two inputs and one output which is like multiplication and gives 1 output when both f its inouts are 1.
+OR GATE Has plus operation and gives output 1 when either of its inputs are 1.
+NAND GATE A COMBO OD NOT AND AND GATE.
+NOR GATE A COMBO OF NOT AND OR GATE.
+XOR GATE 
+XNOR GATE
+5V means 1 and 0 v means 0.
+UNIVERSAL GATES.
