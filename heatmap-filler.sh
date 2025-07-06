@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set your name and email
-git config user.name "Your Name"
-git config user.email "youremail@example.com"
+git config user.name "Sumaira hafeez"
+git config user.email "sumairahafeezfp@gmail.com"
 
 # Months to target
 months=("01" "02" "03" "04" "05")  # Jan to May
