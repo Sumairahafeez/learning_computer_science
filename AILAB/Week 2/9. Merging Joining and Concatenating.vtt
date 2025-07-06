@@ -1,0 +1,367 @@
+WEBVTT
+
+00:00:05.280 --> 00:00:07.320
+Hello everyone and welcome to the lecture.
+
+00:00:07.440 --> 00:00:11.140
+Remerging joining cannonading data frames this lecture.
+
+00:00:11.160 --> 00:00:16.110
+We're going to learn how to combine data frames through a variety of methods instead of actually life
+
+00:00:16.110 --> 00:00:21.180
+coding everything out since these methods and commands are actually really simple and most of the typing
+
+00:00:21.180 --> 00:00:25.150
+is just actually creating data frames to merge or join together.
+
+00:00:25.170 --> 00:00:29.160
+We're going to do is just walk through the lecture notebook for this lecture.
+
+00:00:29.160 --> 00:00:32.920
+It's called merging joinery and concatenating and it's under the panda's folder.
+
+00:00:33.150 --> 00:00:35.610
+Let's go ahead and jump to that Jupiter notebook now.
+
+00:00:35.670 --> 00:00:35.970
+All right.
+
+00:00:35.970 --> 00:00:41.250
+Here we are at the Jupiter notebook for merging joining and concatenating.
+
+00:00:41.250 --> 00:00:45.080
+First off we're going to create some example data frames to work with here.
+
+00:00:45.120 --> 00:00:50.150
+I've imported pandas PD and using a dictionary and a list of index numbers.
+
+00:00:50.310 --> 00:00:57.000
+I've created three data frames one DFA to ADF three we take a look at these data frames will see that
+
+00:00:57.000 --> 00:01:05.470
+we have diff one which is columns A B C and D and indexes 0 through 3 and then DF 2 has the same columns
+
+00:01:05.610 --> 00:01:12.370
+that the indexes are 4 through 7 and then DF 3 has the indices through 11.
+
+00:01:12.390 --> 00:01:17.430
+Let's talk about concatenation concatenation basically glues together the data frames.
+
+00:01:17.440 --> 00:01:20.570
+Keep in mind that the dimensions should match Machel on the axis.
+
+00:01:20.580 --> 00:01:23.100
+You're trying to concatenate on for this.
+
+00:01:23.100 --> 00:01:29.540
+You just use PD dot com cat and then passen a list of the data frame's to concatenate together here
+
+00:01:29.690 --> 00:01:36.190
+I'm going to concatenate data frames one two and three by passing them into a list into the PD.
+
+00:01:36.210 --> 00:01:39.090
+Concat function.
+
+00:01:39.310 --> 00:01:43.600
+We can see that by default the access to join on is zero.
+
+00:01:43.620 --> 00:01:45.970
+Meaning it's going to join the rows together.
+
+00:01:46.440 --> 00:01:52.580
+We see here that successfully concatenated or basically glued together the data frames and we can see
+
+00:01:52.590 --> 00:01:57.510
+now we have a b and c and d as columns with the indices 0 all the way up to 11.
+
+00:01:57.560 --> 00:02:00.100
+With each of the data points lining up nicely.
+
+00:02:00.270 --> 00:02:06.090
+Now you can also specify x is equal to 1 if you want it to join and merge along the columns or concatenate
+
+00:02:06.150 --> 00:02:07.290
+along the columns.
+
+00:02:07.680 --> 00:02:13.770
+And this is an example of what happens when you use PD that Kancha on these three data frames along
+
+00:02:13.780 --> 00:02:13.820
+.
+
+00:02:13.830 --> 00:02:15.900
+X is equal to 1.
+
+00:02:15.900 --> 00:02:20.970
+Notice here we have a bunch of missing values and that's because these data frames didn't have values
+
+00:02:20.970 --> 00:02:23.800
+for all the indices that you wanted to concatenate on.
+
+00:02:24.060 --> 00:02:31.640
+For example with data frame 1 A B and C and D you had the values for 0 through 3.
+
+00:02:31.650 --> 00:02:37.290
+However for all the way up to 11 you had no values and that's why it filled in with Knolles when you
+
+00:02:37.290 --> 00:02:44.850
+joined this are concatenated on data into and data frame 3 which basically means when you're working
+
+00:02:44.850 --> 00:02:50.910
+with concatenation and P-doc concat you'll want to make sure that you have information lining up correctly
+
+00:02:51.120 --> 00:02:53.960
+when you join on the axes.
+
+00:02:54.120 --> 00:02:58.850
+In this case we wanted to join an access equal 0 to line everything up correctly.
+
+00:02:58.860 --> 00:03:00.740
+How do we specify the join along the columns.
+
+00:03:00.750 --> 00:03:02.100
+Fax a sequel to one.
+
+00:03:02.250 --> 00:03:04.890
+We'll have a bunch of missing information.
+
+00:03:04.890 --> 00:03:09.450
+Most often you'll probably be joining columns together so you'll in fact be joining along.
+
+00:03:09.450 --> 00:03:11.060
+Access is equal to 1.
+
+00:03:11.080 --> 00:03:15.890
+However make sure you know your data and what you actually want to concatenate before choosing an access
+
+00:03:15.890 --> 00:03:16.700
+.
+
+00:03:16.710 --> 00:03:19.560
+All right let's go ahead and move along.
+
+00:03:19.650 --> 00:03:22.440
+We'll create some more example data frames in this case.
+
+00:03:22.440 --> 00:03:27.780
+One called left and one called right here for Take a look at left.
+
+00:03:27.780 --> 00:03:34.680
+We have columns A and B with some values in them and then we have a key column k 0 through K3 we have
+
+00:03:34.680 --> 00:03:40.340
+a right data frame which has a very similar data frame except it has different columns C and D.
+
+00:03:40.470 --> 00:03:45.690
+However the key column is exactly the same as the left so heavily left data frame and the right data
+
+00:03:45.690 --> 00:03:51.850
+frame panderers is capable of using the merge function to do merge logic.
+
+00:03:51.870 --> 00:03:55.020
+That's very similar to merging sequel tables together.
+
+00:03:55.230 --> 00:03:59.610
+And if you don't work of sequel you don't have to worry too much about this but I'll show you the basics
+
+00:03:59.610 --> 00:04:02.100
+of how to merge two data frames.
+
+00:04:02.100 --> 00:04:07.790
+You just say PD that merge and then passen the left data frame and the right data frame.
+
+00:04:07.920 --> 00:04:14.470
+Or just pasan data from one or data frame to whatever data frames you want to merge together.
+
+00:04:14.550 --> 00:04:16.840
+By default it will merge them on inner.
+
+00:04:17.040 --> 00:04:22.440
+And if you're unfamiliar with inor as regards to siecle merging don't worry about it just use the default
+
+00:04:22.470 --> 00:04:23.160
+inner.
+
+00:04:23.220 --> 00:04:26.700
+More importantly learn about this on.
+
+00:04:26.700 --> 00:04:31.200
+Basically when you're merging you're going to want to merge on a key column and you can actually pass
+
+00:04:31.200 --> 00:04:33.740
+in one or more key columns which we'll see later.
+
+00:04:33.810 --> 00:04:39.930
+But basically what's happening here is we're going to combine or merge these data frames together on
+
+00:04:39.930 --> 00:04:41.090
+this key column.
+
+00:04:41.220 --> 00:04:46.650
+And that way instead of concatenating them we would have two key columns we can merge so that we merge
+
+00:04:46.650 --> 00:04:49.960
+them or join them on the same key column that they share.
+
+00:04:50.280 --> 00:04:55.050
+So the logic here is when you're using the PD that merge instead of just gluing the data frames together
+
+00:04:55.140 --> 00:04:58.260
+you're going to see where the values match up on columns.
+
+00:04:58.260 --> 00:05:03.630
+In this case the key column and then create the rows using that key column.
+
+00:05:03.630 --> 00:05:06.570
+Let me go and show you a couple of more complicated examples.
+
+00:05:06.900 --> 00:05:14.910
+Here I have left and right data frames and will notice here that they have two keys one and key two
+
+00:05:15.900 --> 00:05:20.820
+otherwise they're exactly the same as the left and right we just saw earlier you can use PD that merge
+
+00:05:21.050 --> 00:05:26.310
+just pass in the first data frame and the second data frame and then you can specify on and you can
+
+00:05:26.310 --> 00:05:33.420
+pass in a list of keys if you want to actually merge on multiple keys such as key one or key to.
+
+00:05:33.870 --> 00:05:38.660
+And here are some more examples using merge outer or merge.
+
+00:05:38.730 --> 00:05:44.850
+Right now if you're not familiar of sequence syntax such as inner or outer right or left joins the worry
+
+00:05:44.850 --> 00:05:49.290
+about this too much we don't actually use these in the course we will always default to something that
+
+00:05:49.290 --> 00:05:53.150
+looks like this in the course we just use an inner join.
+
+00:05:53.190 --> 00:05:57.700
+However if you find yourself trying to do the sort of sequel merging and you're already familiar of
+
+00:05:57.690 --> 00:06:04.020
+sequel syntax just know that Pancho's has this how operator are parameter for you to use in case you
+
+00:06:04.020 --> 00:06:05.810
+want the extra functionality.
+
+00:06:06.030 --> 00:06:11.520
+But basically depending if you are using outer writes inner etc. You may find that you have some missing
+
+00:06:11.520 --> 00:06:16.890
+values so keep that in mind as you're working with PD the merge.
+
+00:06:16.920 --> 00:06:19.070
+Here's an example of left.
+
+00:06:19.680 --> 00:06:25.080
+And finally we've arrived at joining joining is a convenient method for combining the columns of two
+
+00:06:25.080 --> 00:06:29.310
+potentially differently index data frames into a single resulting data frame.
+
+00:06:29.400 --> 00:06:33.840
+You could essentially think of this as the same thing as merge except the keys you want to join on are
+
+00:06:33.840 --> 00:06:36.680
+actually on your index instead of a column.
+
+00:06:36.690 --> 00:06:39.600
+So here I've created two data frames left and right.
+
+00:06:39.600 --> 00:06:45.620
+Notice they have columns A B and then CD and then the index is actually the is we're going to join them
+
+00:06:46.490 --> 00:06:52.530
+and the syntax you can use is say left join right in will automatically do an inner join between the
+
+00:06:52.560 --> 00:06:53.990
+left and the right.
+
+00:06:54.060 --> 00:06:59.880
+Based off of the index keys if you wanted to merge these two data frames based off of one of their columns
+
+00:06:59.880 --> 00:07:05.220
+you'd have to use merge but the join method functionality comes off of one of the data frames.
+
+00:07:05.210 --> 00:07:08.830
+You say that join and then pass on the other data frame and just like merge.
+
+00:07:08.850 --> 00:07:13.030
+You can specify HOW such as inner left outer etc..
+
+00:07:13.070 --> 00:07:17.380
+Remember this only for event sequel users who are already familiar with that terminology.
+
+00:07:17.430 --> 00:07:20.330
+If you're unfamiliar with that don't worry about it too much.
+
+00:07:20.370 --> 00:07:26.700
+Let's go ahead and do a quick review of how to join merge and cottony data frames and we'll go over
+
+00:07:26.700 --> 00:07:29.000
+the key topics you should get out of this lecture.
+
+00:07:29.400 --> 00:07:34.800
+As far as merging joining and concatenating data frames in order to concatenate or Glew data frames
+
+00:07:34.800 --> 00:07:37.100
+together the process is quite simple.
+
+00:07:37.320 --> 00:07:43.080
+You just say pecan cat and you pasan a list of your data frames and then you make sure to specify the
+
+00:07:43.080 --> 00:07:48.900
+correct axis depending if you want to join them together by the rows or by their columns.
+
+00:07:48.900 --> 00:07:54.960
+Next you have PD that merge and PD that merge allows you to merge data frames together and you just
+
+00:07:54.960 --> 00:07:59.190
+passen your first data frame you want to merge and then your second data frame you want to merge and
+
+00:07:59.190 --> 00:08:03.000
+then you say on and you can Pessin just a single column key.
+
+00:08:03.150 --> 00:08:08.420
+Or you can pass any list of keys and by default it will merge on enter.
+
+00:08:08.610 --> 00:08:13.350
+If you're unfamiliar with merging sequel tables don't worry about this how to much just worry about
+
+00:08:13.590 --> 00:08:19.500
+one data frame on the left one data frame on the right and then on a certain key column or on a list
+
+00:08:19.500 --> 00:08:20.550
+of key columns.
+
+00:08:20.550 --> 00:08:26.730
+That's really the only functionality of PD merged I will be using throughout the course and then for
+
+00:08:26.730 --> 00:08:31.560
+joining is a more advanced method for combining columns of two potentially differently indexed data
+
+00:08:31.560 --> 00:08:32.150
+frames.
+
+00:08:32.160 --> 00:08:37.620
+It's very similar to merge except they are actually joining on the index instead of a column and the
+
+00:08:37.620 --> 00:08:42.940
+syntax for that is just the name of the Left data frame drawing on the right.
+
+00:08:43.140 --> 00:08:48.090
+We actually won't be using join throughout the course but I want you to be aware that and you can reference
+
+00:08:48.090 --> 00:08:51.810
+this notebook book or the documentation in case you ever want to review joining.
+
+00:08:52.110 --> 00:08:53.610
+All right great job.
+
+00:08:53.730 --> 00:08:55.440
+Thanks and I'll see you at the next lecture

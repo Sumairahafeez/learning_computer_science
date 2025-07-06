@@ -1,0 +1,607 @@
+WEBVTT
+
+00:00:05.370 --> 00:00:11.100
+Hello everyone and welcome to the data input and output lecture panels as a library has the ability
+
+00:00:11.100 --> 00:00:15.900
+to read data and write data to a wide variety of sources for this lecture.
+
+00:00:15.900 --> 00:00:22.860
+We're going to be concerned with just four main data sources see files Excel files H.T. mail from the
+
+00:00:22.860 --> 00:00:30.600
+web and sequel in order to work with ASTM l files and sequel databases with panderers only to install
+
+00:00:30.600 --> 00:00:31.920
+for libraries.
+
+00:00:31.980 --> 00:00:35.310
+The instructions are in the notebook or if you just want to do it quickly.
+
+00:00:35.310 --> 00:00:42.930
+These are the four libraries needed to install sequel alchemy lxi Mel HVM L5 lid and then the beautiful
+
+00:00:42.930 --> 00:00:46.880
+soup for library you can do this either with Pipp or Khanda.
+
+00:00:47.280 --> 00:00:47.760
+All right.
+
+00:00:47.940 --> 00:00:52.510
+Once you've installed these libraries and reference a notebook you're ready to get started.
+
+00:00:52.560 --> 00:00:53.890
+Let's go ahead and jumped in.
+
+00:00:53.910 --> 00:00:58.190
+Jupiter note book and show you how to read and write files with pandas.
+
+00:00:58.230 --> 00:01:00.860
+All right here we are at the Jupiter notebook.
+
+00:01:00.930 --> 00:01:06.420
+Keep in mind that as we reference the files such as the example see X-Fi file and the example Excel
+
+00:01:06.420 --> 00:01:12.030
+file you'll need to make sure they're in the same location as your Jupiter notebook is in order to check
+
+00:01:12.030 --> 00:01:13.830
+the location of your a notebook.
+
+00:01:13.830 --> 00:01:20.910
+You can just go in a cell and type P WD do shift enter and report back the location.
+
+00:01:20.910 --> 00:01:22.750
+This is the same file location.
+
+00:01:22.770 --> 00:01:26.670
+The example see every file in the example Excel file should be in.
+
+00:01:26.760 --> 00:01:31.680
+If you've downloaded the entire repository of notebooks and are working in the data input and output
+
+00:01:31.680 --> 00:01:37.680
+section or notebook you should be fine by just referencing the files as if they're already there.
+
+00:01:38.250 --> 00:01:43.870
+OK let's go ahead and show how to open and read C as V files in order to do this.
+
+00:01:43.890 --> 00:01:52.430
+You can just say PD read underscore CXXVI and then begin typing out the name of your C as the file.
+
+00:01:52.500 --> 00:01:54.510
+In this case I know it's called the example.
+
+00:01:54.660 --> 00:02:01.000
+So as I started typing this out a nice trick it's a click tab and it will auto complete the file name
+
+00:02:00.990 --> 00:02:01.850
+.
+
+00:02:02.190 --> 00:02:03.570
+In your case you may just have.
+
+00:02:03.570 --> 00:02:06.340
+Example Not example that C S V.
+
+00:02:06.390 --> 00:02:08.880
+Let's go ahead and read that in.
+
+00:02:09.030 --> 00:02:15.840
+I did shift enter and now I can see the C as we file as a data frame with the columns A B C and D and
+
+00:02:15.840 --> 00:02:19.290
+0 1 to 3 as the rows.
+
+00:02:19.290 --> 00:02:28.010
+Note that if I want to read any files I just use the read underscore command line click tab here and
+
+00:02:28.020 --> 00:02:33.060
+I get this dropdown menu of the variety of formats that Pancho's can read from.
+
+00:02:33.060 --> 00:02:35.350
+So Pan this can read from even your clipboard.
+
+00:02:35.350 --> 00:02:42.400
+See as we excel files HDR files Jaison pickles seek sequel files tables etc..
+
+00:02:42.660 --> 00:02:44.870
+Just keep that in mind that they have a lot of options here.
+
+00:02:44.940 --> 00:02:47.340
+Right now we're just going over the most common ones.
+
+00:02:47.840 --> 00:02:53.490
+OK in order to write to a CXXVI file you're going to need a data frame so I'm going to go ahead and
+
+00:02:53.490 --> 00:02:55.740
+just say DF is equal to PD thought.
+
+00:02:55.760 --> 00:02:58.100
+Read underscore C as V.
+
+00:02:58.530 --> 00:03:05.920
+And again just to do example tab autocomplete here and now I have T.F. as that same example DFS.
+
+00:03:05.920 --> 00:03:10.290
+I've actually saved it to a variable off of a data frame.
+
+00:03:10.290 --> 00:03:14.000
+You can say to underscore if you clicked tab here.
+
+00:03:14.220 --> 00:03:17.470
+You'll notice that you have a variety of formats you can write to.
+
+00:03:17.580 --> 00:03:21.270
+So basically almost all the same formats that you could read from.
+
+00:03:21.270 --> 00:03:25.780
+So I'm going to go in and say DFA underscore to s.
+
+00:03:26.070 --> 00:03:36.960
+I'm going to label this my underscore output and the other thing I do is say Index equals false and
+
+00:03:36.960 --> 00:03:42.200
+the reason for that is because I don't actually want to save this index as a column.
+
+00:03:42.210 --> 00:03:47.400
+Let me go ahead and show you what happens if I don't put indexical to false and they just put the F
+
+00:03:47.400 --> 00:03:49.290
+to see Esrey.
+
+00:03:49.410 --> 00:03:54.660
+I'm going to go ahead and say PD that read underscore cxxviii and I'm going to read the file I just
+
+00:03:54.660 --> 00:03:56.860
+saved my output.
+
+00:03:56.960 --> 00:04:03.180
+No I get this column here called unnamed 0 and that was the old index.
+
+00:04:03.180 --> 00:04:09.560
+Now if I say T.F. to see is the index false in run that cell.
+
+00:04:09.750 --> 00:04:15.360
+And then if I read my output again that I will actually say that index and I will automatically assign
+
+00:04:15.360 --> 00:04:17.490
+a range index to the data frame.
+
+00:04:17.490 --> 00:04:22.470
+Keep that in mind as you're saving your CACP files whether or not it's appropriate for you to say Index
+
+00:04:22.560 --> 00:04:24.520
+equals false.
+
+00:04:24.540 --> 00:04:24.850
+All right.
+
+00:04:24.870 --> 00:04:28.700
+Now let's go ahead and move on to reading and writing from Excel files.
+
+00:04:28.870 --> 00:04:31.240
+Pandas can read and write excel files.
+
+00:04:31.290 --> 00:04:34.280
+Keep in mind that pandas can only import the data.
+
+00:04:34.350 --> 00:04:39.990
+It can't import formulas or images or things like macros using that with the read other score.
+
+00:04:40.020 --> 00:04:43.310
+Excel method may cause pandas to crash.
+
+00:04:43.320 --> 00:04:49.890
+Another thing to note is that you may get an error asking you to install the x l r d library that should
+
+00:04:49.890 --> 00:04:51.360
+have been automatically installed.
+
+00:04:51.420 --> 00:04:53.330
+If you use the Anaconda distribution.
+
+00:04:53.430 --> 00:04:58.710
+But if you did not you'll go ahead and go to your terminal and in your terminal or command line you'll
+
+00:04:58.710 --> 00:05:05.130
+type conda install X LRAD or you'll do the same thing with a pip install.
+
+00:05:05.160 --> 00:05:06.810
+Again you're not going to do this in a cell.
+
+00:05:06.820 --> 00:05:09.410
+You will actually do this at the command line or terminal.
+
+00:05:09.420 --> 00:05:14.300
+Hopefully if you did the Anaconda distribution that should have automatically installed along with pantless
+
+00:05:14.320 --> 00:05:14.710
+.
+
+00:05:15.060 --> 00:05:17.070
+Let's go ahead and see how this works.
+
+00:05:17.100 --> 00:05:18.590
+I'm going to go ahead and show the Excel file.
+
+00:05:18.600 --> 00:05:22.700
+I'll be working with your you have a very simple Excel sample.
+
+00:05:22.740 --> 00:05:27.870
+In fact it looks almost the same as the so the file We're working with except here it's noted that it's
+
+00:05:27.870 --> 00:05:33.350
+in sheet 1 and basically what Pandurs think thinks a workbook is.
+
+00:05:33.420 --> 00:05:34.620
+Is that a workbook.
+
+00:05:34.650 --> 00:05:41.960
+It's just a bunch of sheets and each sheet is a data frame meaning I can say PD that read Excel.
+
+00:05:42.390 --> 00:05:46.910
+I pass in the Excel file name the X LS X File.
+
+00:05:47.130 --> 00:05:54.000
+A good trick for this is to begin typing the file name press tab and select it again this only works
+
+00:05:54.030 --> 00:05:57.080
+if the excel files in the same location as this notebook.
+
+00:05:57.270 --> 00:06:04.790
+If it's not you'll need to pass in the whole file path and then you can say sheet name and then pasand
+
+00:06:04.830 --> 00:06:11.160
+sheets one go ahead and read this and we get the output we expected.
+
+00:06:11.160 --> 00:06:13.780
+And that's basically it for reading from an excel file.
+
+00:06:13.790 --> 00:06:18.390
+You pass in the file and then you pass in the sheet name you want in Pandurs tries its best to read
+
+00:06:18.390 --> 00:06:20.690
+it in as a data frame.
+
+00:06:20.820 --> 00:06:22.490
+A data frame to an Excel output.
+
+00:06:22.530 --> 00:06:24.400
+It's also a very simple process.
+
+00:06:24.420 --> 00:06:31.620
+You just take the data frame you want to write to excel say to underscore Excel pass in the name of
+
+00:06:31.620 --> 00:06:33.400
+the Excel file you want to save it to.
+
+00:06:33.430 --> 00:06:36.660
+That's going to make a new one called Excel.
+
+00:06:36.870 --> 00:06:44.730
+Sample 2 dot x l s x and then we can specify a sheet name if you want to.
+
+00:06:44.910 --> 00:06:49.980
+Something to know is that where you're saying to underscore Excel for whatever reason pandas you need
+
+00:06:49.980 --> 00:06:54.260
+to write in sheets underscore name and the name of the sheet.
+
+00:06:54.300 --> 00:06:57.120
+We'll go in and put in new sheet.
+
+00:06:57.120 --> 00:07:00.500
+All right it's good and run this and that's it.
+
+00:07:00.510 --> 00:07:02.730
+We've saved that to an Excel file.
+
+00:07:02.730 --> 00:07:05.970
+Now let's go ahead and move along to working T.M..
+
+00:07:06.180 --> 00:07:10.260
+Again you'll need to install quite a few libraries in order for this to work and you probably need to
+
+00:07:10.260 --> 00:07:12.530
+restart that Jupiter notebook after that.
+
+00:07:12.570 --> 00:07:15.080
+Go ahead and check out the notes for this lecture.
+
+00:07:15.080 --> 00:07:20.130
+The note book for it to get a list of all the libraries need to install or go ahead and go to the beginning
+
+00:07:20.130 --> 00:07:22.670
+of the lecture where we show the list of libraries.
+
+00:07:22.950 --> 00:07:26.760
+Let's talk about HTL input here.
+
+00:07:26.790 --> 00:07:34.650
+I have a link to the FDIC doc of failed bank list page and here's just the list of all the failed banks
+
+00:07:35.010 --> 00:07:36.710
+by the FDIC.
+
+00:07:36.870 --> 00:07:41.080
+As far as them keeping track is the Federal Deposit Insurance Corporation.
+
+00:07:41.220 --> 00:07:43.310
+And here we have a bunch of failed banks.
+
+00:07:43.320 --> 00:07:47.660
+The closing date updated day etc. but this is basically just watched him blink.
+
+00:07:47.760 --> 00:07:51.180
+This link is in the notebooks he can go out and copy and paste it from there.
+
+00:07:51.180 --> 00:07:55.760
+I'm going to go ahead and copy this link and try to read it.
+
+00:07:55.760 --> 00:07:59.890
+And of panderers nerds that do this all I have to do is say PD.
+
+00:07:59.970 --> 00:08:05.610
+Well let's go ahead and make say data equals PD dots.
+
+00:08:06.060 --> 00:08:08.190
+Read h T.M..
+
+00:08:08.420 --> 00:08:12.900
+And then as a string I'm going to pass in that actual age TMLC.
+
+00:08:14.440 --> 00:08:19.720
+They'll take a little bit of time to read it that it should work out if you have all the libraries.
+
+00:08:20.000 --> 00:08:20.340
+OK.
+
+00:08:20.370 --> 00:08:21.600
+Looks like it worked out.
+
+00:08:21.690 --> 00:08:27.280
+Something to note here is that usually this isn't going to directly relate to a data frame.
+
+00:08:27.300 --> 00:08:34.360
+If I check out what data is if I say type you'll notice that it's actually a list.
+
+00:08:34.470 --> 00:08:40.350
+And essentially what pantless tried to do was to find every table element that was in this h team l
+
+00:08:40.350 --> 00:08:41.190
+file.
+
+00:08:41.190 --> 00:08:48.090
+And if you're familiar if h T.M. you know that if you can right click here and view page source you'll
+
+00:08:48.090 --> 00:08:50.660
+have this list of actual HTL code.
+
+00:08:50.910 --> 00:08:56.010
+And if you're familiar of h l you'll know that you can actually look for just like there's list classes
+
+00:08:56.010 --> 00:08:56.670
+here.
+
+00:08:56.700 --> 00:09:03.300
+There's actually table references so there's table markings in here in the HTML code and that's basically
+
+00:09:03.300 --> 00:09:04.550
+the panel is going to do.
+
+00:09:04.560 --> 00:09:09.500
+And that's going to make a list of them and convert each item in that list into a data frame.
+
+00:09:09.720 --> 00:09:13.800
+And what you're going to do is just cycle through that list until you find what you want it to look
+
+00:09:13.800 --> 00:09:14.430
+for.
+
+00:09:14.490 --> 00:09:17.310
+In this case it should be the very first item in the list.
+
+00:09:17.310 --> 00:09:20.120
+So if we say data at point zero.
+
+00:09:20.160 --> 00:09:25.790
+So the very first item in that list that's the data frame we were looking for big name city is updated
+
+00:09:25.880 --> 00:09:26.120
+.
+
+00:09:26.220 --> 00:09:26.800
+Cetera.
+
+00:09:26.940 --> 00:09:32.930
+Let's go and just check out the head of that data frame and that's what this looks like.
+
+00:09:33.030 --> 00:09:34.670
+Again some things don't copy over.
+
+00:09:34.670 --> 00:09:35.310
+Exactly.
+
+00:09:35.310 --> 00:09:36.920
+You get a bunch of no values.
+
+00:09:37.110 --> 00:09:42.720
+But keep in mind panderers is basically just reading this H.T. mail file as best as it can.
+
+00:09:42.720 --> 00:09:43.110
+All right.
+
+00:09:43.260 --> 00:09:46.630
+That's H-2A mail which is essentially just web scrapin of Pandurs.
+
+00:09:46.650 --> 00:09:51.150
+Let's finally move along to our last topic which is working with sequel.
+
+00:09:51.210 --> 00:09:55.530
+Now there's quite a few notes in your notebook regarding sequel and pandas.
+
+00:09:55.530 --> 00:10:01.410
+Pandas is it actually probably the best way to read a sequel database because there are many flavors
+
+00:10:01.410 --> 00:10:07.920
+of sequel engines such as postscripts sequel my sequel sequel light cetera where we're going to do here
+
+00:10:07.920 --> 00:10:13.860
+is just actually build a very simple sequel engine that's going to be just temporarily held in memory
+
+00:10:14.250 --> 00:10:19.070
+in order to show you how you can use Pandurs to read tables completely as data frames.
+
+00:10:19.080 --> 00:10:25.380
+However I would recommend that you actually do a search for a specific driver dependent on your specific
+
+00:10:25.470 --> 00:10:26.810
+sequel engine.
+
+00:10:26.850 --> 00:10:31.650
+For example if you go to the notebook for this lecture you'll see that if you're using Postgres sequel
+
+00:10:31.860 --> 00:10:36.810
+you should actually using a library called Psycho PGE 2 which is specifically designed to work with
+
+00:10:36.810 --> 00:10:41.370
+post-career sequel or if you're using my sequel you should use pi my sequel.
+
+00:10:41.370 --> 00:10:45.690
+In other library specifically designed for that specific flavor of sequel.
+
+00:10:45.780 --> 00:10:50.490
+Right now we're just going to do a very simple example of how pandas could read an entire table and
+
+00:10:50.490 --> 00:10:53.090
+sequel if it had to.
+
+00:10:54.080 --> 00:11:03.600
+We'd end up doing is saying from sequel alchemy imports creates engine and this is going to just allow
+
+00:11:03.600 --> 00:11:07.740
+us to create a very simple sequel engine in memory.
+
+00:11:07.740 --> 00:11:14.610
+I'm going to go ahead and say engine is equal to create underscore engine and here and just going to
+
+00:11:14.610 --> 00:11:16.290
+type in sequel lights
+
+00:11:19.460 --> 00:11:26.790
+three forward slashes and then memory colon.
+
+00:11:26.850 --> 00:11:31.510
+So I have sequel like colon three forward slashes colon memory colon.
+
+00:11:31.600 --> 00:11:34.430
+We're going to go ahead and run that and this little thing.
+
+00:11:34.440 --> 00:11:41.190
+This little line of code has created a very temporary very small sequel light engine database that's
+
+00:11:41.190 --> 00:11:42.610
+running in memory.
+
+00:11:42.720 --> 00:11:50.070
+I'm going to go ahead and take my data frame that DSF and I'm going to say to underscore sequel and
+
+00:11:50.070 --> 00:11:55.330
+I'm going to write it to that very temporary engine that we have running in memory.
+
+00:11:55.500 --> 00:11:59.430
+So what you can do is we're going to say to sequel you're going to pass in what you want this table
+
+00:11:59.430 --> 00:12:00.310
+to be called.
+
+00:12:00.540 --> 00:12:03.310
+So go ahead and call this my table.
+
+00:12:03.750 --> 00:12:05.920
+And then you pass in the sequel engine you're working with.
+
+00:12:05.920 --> 00:12:07.990
+In this case it's just an engine.
+
+00:12:08.070 --> 00:12:15.630
+Now this engine is going to be a connection usually I would recommend you read through the documentation
+
+00:12:15.660 --> 00:12:22.050
+thoroughly but again like I mentioned earlier pandas just by itself probably isn't the best source for
+
+00:12:22.050 --> 00:12:25.010
+you to actually read sequel into pandas directly.
+
+00:12:25.050 --> 00:12:30.870
+You should probably look for specialized Python libraries for whatever version of sequel you're working
+
+00:12:30.870 --> 00:12:31.560
+with.
+
+00:12:31.800 --> 00:12:37.590
+But as far as a very simple setting you can just say DF to sequel passen the new table name you want
+
+00:12:37.710 --> 00:12:41.530
+and then the connection to your sequel engine.
+
+00:12:41.820 --> 00:12:47.010
+And now I'm going to go ahead and say sequel if and actually read back that table.
+
+00:12:47.010 --> 00:12:54.190
+So going to say PD Reed underscore sequel I pass in the name of my table in this case it's my table
+
+00:12:54.200 --> 00:12:54.510
+.
+
+00:12:54.670 --> 00:12:58.110
+And then I specify the actual connection and so cion.
+
+00:12:58.380 --> 00:13:04.520
+And that's just the engine that very small sequel lights database that's happening in memory.
+
+00:13:04.620 --> 00:13:11.160
+If I go ahead and read that and check out what that looks like I get sequel DMF and notice that index
+
+00:13:11.280 --> 00:13:13.250
+is a new column here.
+
+00:13:13.260 --> 00:13:16.450
+All right go ahead and feel free to post the Q&A forums.
+
+00:13:16.560 --> 00:13:22.230
+If you're having trouble finding a particular library that works if your sequel engine or your flavor
+
+00:13:22.230 --> 00:13:28.590
+of sequel as far as this lecture the main thing to get out of it is how to read and write to C S V files
+
+00:13:28.860 --> 00:13:33.300
+because they're only going to be work of C S V files for the rest of the Course as far as your own personal
+
+00:13:33.300 --> 00:13:34.100
+usage.
+
+00:13:34.110 --> 00:13:36.750
+Hopefully you can just check out the read underscore methods.
+
+00:13:36.750 --> 00:13:42.300
+There are a lot of them and you can just look at the documentation or reference a notebook for how to
+
+00:13:42.300 --> 00:13:45.800
+actually read to a panderers data frame.
+
+00:13:45.810 --> 00:13:47.920
+All right thanks everyone.
+
+00:13:47.940 --> 00:13:52.590
+Go ahead and ask any questions you have on this lecture at the Q&A forum because there's a lot of options
+
+00:13:52.590 --> 00:13:55.030
+here and we just don't have time to cover them all.
+
+00:13:55.110 --> 00:13:58.290
+But if you have any questions I'm happy to answer them in the forums.
+
+00:13:58.290 --> 00:14:00.150
+Thanks everyone and I'll see you at the next lecture
