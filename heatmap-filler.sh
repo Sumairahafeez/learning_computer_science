@@ -1,26 +1,44 @@
 #!/bin/bash
 
-# List of dates you want to appear in your GitHub heatmap (format: YYYY-MM-DD)
-dates=(
-  "2025-01-01"
-  "2025-01-02"
-  "2025-01-03"
-  "2025-01-04"
-  "2025-01-05"  # Monday
-)
+# Set your name and email
+git config user.name "Your Name"
+git config user.email "youremail@example.com"
 
-# Optional: Set your name and email (match GitHub!)
-export GIT_AUTHOR_NAME="Sumairahafeez"
-export GIT_AUTHOR_EMAIL="sumairahafeezfp@gmail.com"
-export GIT_COMMITTER_NAME="sumairahafeezfp@gmail.com"
-export GIT_COMMITTER_EMAIL="sumairahafeezfp@gmail.com"
+# Months to target
+months=("01" "02" "03" "04" "05")  # Jan to May
+days=("Tue" "Wed" "Fri")          # Targeted days
 
-# Loop through each date and create a backdated commit
-for date in "${dates[@]}"; do
-  export GIT_AUTHOR_DATE="$date 12:00:00"
-  export GIT_COMMITTER_DATE="$date 12:00:00"
-  git commit --allow-empty -m "Heatmap filler for $date"
+# Year to target
+year=2024
+
+# Create a new repo if not already one
+if [ ! -d ".git" ]; then
+    git init
+fi
+
+# Create a dummy file
+touch heatmap.md
+
+# Loop through each day from Jan 1 to May 31, 2024
+start_date="$year-01-01"
+end_date="$year-05-31"
+
+current_date="$start_date"
+while [ "$(date -d "$current_date" +%Y%m%d)" -le "$(date -d "$end_date" +%Y%m%d)" ]; do
+    dow=$(date -d "$current_date" '+%a')  # Get day of week
+
+    for d in "${days[@]}"; do
+        if [ "$dow" == "$d" ]; then
+            export GIT_AUTHOR_DATE="$current_date 12:00:00"
+            export GIT_COMMITTER_DATE="$current_date 12:00:00"
+            echo "Commit on $current_date" >> heatmap.md
+            git add heatmap.md
+            git commit -m "chore: commit on $current_date"
+        fi
+    done
+
+    # Move to next day
+    current_date=$(date -I -d "$current_date + 1 day")
 done
 
-# Push all commits
-git push origin main
+echo "✅ Done creating commits on Tue/Wed/Fri from Jan to May 2024."
