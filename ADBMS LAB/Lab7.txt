@@ -1,0 +1,2 @@
+direct and indirect mapping 
+JSON format is light weight and has fast processing than xml 
