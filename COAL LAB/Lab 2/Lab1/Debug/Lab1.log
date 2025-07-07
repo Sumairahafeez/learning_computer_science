@@ -1,0 +1,3 @@
+﻿  Assembling Test.asm...
+Test.asm(6): warning A4011: multiple .MODEL directives found : .MODEL ignored
+  Lab1.vcxproj -> F:\4th semeter\COALLAB\Tasks\Lab1 - Copy\Debug\Lab1.exe
