@@ -1,0 +1,6 @@
+conversion of assembly language to machine language is instruction encoding
+b8 is an operand code for mov eax, => {loading a 32-bit constant into EAX}
+c3 is operand for return statement...
+masm performs these conversions..
+invoke tab lagta hai jab dosra function use krna ho or call tab jab apn afunction use krna ho...
+DWORD can be used in the form of array eg DWORD 100,1001,1002

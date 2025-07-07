@@ -1,0 +1,12 @@
+.data for variable declaration
+.code for code declaration
+line end determines the next part to be executed
+	main proc(for start of procedure)
+	main endp(for the end of program)
+invoke is simply a function call isay aik parameter pass kia jata hai
+end main is used to declare that whole code of assembly is completed here
+debugging:
+	breakpoints
+f10 = stepover
+all data representation is done in hexadecimal form
+red color during debugging means that something is being changed.

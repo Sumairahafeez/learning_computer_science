@@ -1,0 +1,25 @@
+Registers:
+EAX=>{Extended Accumulator X=name}
+its size is 32 bits in x86 processor
+for reducing wastage logically we halfed it from center named AX
+its size is 16 bits it is the lower half of the register(0-15)
+we divide AX further into two smaller parts AH and AL each of 8 bits
+if we want to store smaller data we use AL or AH
+these are major general purpose registers.
+higher part ki division nhi hai AX sirf aik hai 
+EBX={Base}
+ECX={control}
+EDX={Data}
+ESI EDI EBP ESP {last two cannot be used for our common use it is used in stack work}
+is main minimun 16 bits ki division hoti hai just...
+immediate constants any value that comes directly in code without any proper variable{hard code constants}
+call is used to invoke a procedure{function}
+writeint ny sirf register main pari value dikhani hai jo register us sy pehlay likha ho ga usay use krain gy...
+jab isay use krna ho ga toh poory ka poora eax apny liye occupy krna paray ga...
+movzx command is used when two registers of different length are used
+movzx=>{move zero extension}
+if signed number is included movsx{signed exten10:14 AM 1/20/2025sion}
+EFlags gives indication and access to each and every single bit it changes the behaviour of the CPU
+it control the operation of CPU it reflects the outcome of some operations...
+ZR = zero flag{1 when ans is 0, 0 when answer is else or 1}
+baki manual main likha hua hai...
