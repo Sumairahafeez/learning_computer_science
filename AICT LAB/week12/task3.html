@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate age</title>
+</head>
+<body>
+    <p for = "birthYear">Enter your birth year</p>
+    <input type = "number" id = "birthYear" placeholder="YYYY">
+    <button onclick="calculateAge()">calculateAge</button>
+    <p id = "resultage"></p>
+    <script>
+        function calculateAge()
+        {
+            var birthYear = document.getElementById("birthYear").value;
+            if(birthYear && !isNaN(birthYear) && birthYear.length == 4)
+            {
+                var currentYear = 2023;
+                var age = currentYear-birthYear;
+                document.getElementById("resultage").textContent='your age is '+ age + ' years ';
+            }
+            else {
+                
+                document.getElementById('resultage').textContent = 'Please enter a valid 4-digit year.';
+            }
+        }
+        </script>
+</body>
+</html>

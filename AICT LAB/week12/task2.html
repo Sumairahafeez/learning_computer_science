@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum or Product</title>
+</head>
+<style>
+    body{
+        font-family:arial;
+        text-align:center;
+    }
+    
+</style>
+<body>
+   <!-- <form id = calculate> -->
+    <p for = "number1">Enter number1
+        <input type = "number" id="number1" required>
+
+
+    </p>
+    <p for = "number2">Enter number2
+        <input type = "number" id = "number2" required>
+
+    </p>
+    <button  onclick="calculate()">calculate</button>
+<!-- </form>  -->
+   <div id = "result"></div>
+   <script>
+    function calculate()
+    {   
+        var num1 = parseFloat(document.getElementById('number1').value);
+        var num2 = parseFloat(document.getElementById('number2').value);
+        var result;
+        if(num1>num2)
+        {
+             result ='product: '+ (num1*num2);
+            
+        }
+        elif
+        {
+             result ='sum: '+ (num1+num2);
+            
+        }
+          document.getElementById('result').textContent=result;
+        
+    }
+   </script>
+</body>
+</html>

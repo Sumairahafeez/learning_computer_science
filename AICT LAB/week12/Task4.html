@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImage" src="https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true" alt="Placeholder Image" width="150" height="150">
+
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+        function changeImage()
+        {
+            var image = document.getElementById('myImage');
+            image.src = "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340";
+            image.width = 200;
+            image.height = 200;
+        }
+    </script>
+</body>
+</html>

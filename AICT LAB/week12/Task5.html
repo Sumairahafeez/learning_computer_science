@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn Page</title>
+</head>
+<body>
+    <p for = "User Name">Enter Your User Name</p>
+    <input type = "text" id = "UserName" required>
+    <p for = "Password">Enter Your PASSWORD</p>
+    <input type = "password" id = "Password" required>
+    <button type="button" onclick="signUp()">LOG IN</button> 
+    <p id="loginMessage"></p>
+
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); 
+
+           
+            var enteredUsername = document.getElementById('UserName').value;
+            var enteredPassword = document.getElementById('Password').value;
+
+          
+            var validUsername = "sumaira";
+            var validPassword = "12345678";
+
+          
+            if (enteredUsername === validUsername && enteredPassword === validPassword) {
+                document.getElementById('loginMessage').textContent = "Login successful!";
+            } else {
+                document.getElementById('loginMessage').textContent = "Invalid username or password. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
